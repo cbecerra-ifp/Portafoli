@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Alumni';
-    src: url('../fonts/AlumniSansSC.woff2') format("woff2");
+    font-family: 'JURASSIC_PARK';
+    src: url('../fonts/Jurassic_Park.woff2') format("woff2");
 }
 
 body {
     background-color: black;
     color: #ccc;
-    font-family: 'Alumni';
+    font-family: 'JURASSIC_PARK';
     font-size: 20px;
 }
 
@@ -29,6 +29,8 @@ header {
 
 #logo {
     position: relative;
+    width: 200px;
+    height: auto;
     animation: movimentLogo 10s 2 ease-in-out;
 }
 
@@ -53,8 +55,8 @@ main {
 .grid-st {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 900px;
+    gap: 40px;
+    max-width: 90%;
 }
 
 .grid-st .item img {
@@ -66,10 +68,12 @@ main {
 }
 
 .grid-st .item img:hover {
-    transform: scale(1.10);
+    transform: scale(1.20);
 }
 
 footer {
+    font-size: 40px;
+    letter-spacing: 2px;
     padding: 10px;
     display: flex;
     flex-direction: column;
