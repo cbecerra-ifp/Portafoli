@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Alumni';
+    src: url('../fonts/AlumniSansSC.woff2') format("woff2");
+}
+
+body {
+    background-color: black;
+    color: #ccc;
+    font-family: 'Alumni';
+    font-size: 20px;
+}
+
+@media (width <=1200px) {
+    #logo {
+        width: 50%;
+        height: 50%;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#logo {
+    position: relative;
+    animation: movimentLogo 10s 2 ease-in-out;
+}
+
+@keyframes movimentLogo {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 1000px;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+
+.grid-st {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+}
+
+.grid-st .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 2s ease-out;
+}
+
+.grid-st .item img:hover {
+    transform: scale(1.10);
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
