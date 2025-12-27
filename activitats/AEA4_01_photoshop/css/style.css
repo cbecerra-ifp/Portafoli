@@ -92,7 +92,7 @@ h1 {
 }
 
 .fruita {
-    background-image: url(../img/maduixa.png);
+    background-image: url(../img/maduixa.webp);
     width: 200px;
     height: 200px;
     background-size: 100%;
@@ -102,7 +102,7 @@ h1 {
 }
 
 .superposada {
-    background-image: url(../img/llimona.png);
+    background-image: url(../img/llimona.webp);
     width: 200px;
     height: 200px;
     background-size: 100%;
