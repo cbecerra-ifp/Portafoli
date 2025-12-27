@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=link, initial-scale=1.0">
@@ -7,242 +8,250 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   <p class="logo">Ps</p>
-   <div class="contenidor">
-    <h1>FILTRES</h1>
-            <div class="efecte desenfocar">
-            <img src="img/llimona.webp" alt="">
+    <p class="logo">Ps</p>
+    <div class="contenidor">
+        <h1>FILTRES</h1>
+        <div class="efecte desenfocar">
+            <img src="img/llimona.png" alt="">
             <p>Desenfocar</p>
             <input type="range">
         </div>
         <div class="efecte grisos">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Grisos</p>
             <input type="range">
         </div>
         <div class="efecte ombra">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Ombra</p>
             <input type="range">
         </div>
         <div class="efecte sepia">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Sèpia</p>
             <input type="range">
         </div>
         <div class="efecte lluminositat">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Lluminositat</p>
             <input type="range">
         </div>
         <div class="efecte contrast">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Contrast</p>
             <input type="range">
         </div>
         <div class="efecte to">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>To</p>
             <input type="range">
         </div>
         <div class="efecte invertir">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Invertir</p>
             <input type="range">
         </div>
         <div class="efecte saturar">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Saturar</p>
             <input type="range">
         </div>
         <div class="efecte opacitat">
-            <img src="img/llimona.webp" alt="">
+            <img src="img/llimona.png" alt="">
             <p>Opacitat</p>
             <input type="range">
         </div>
 
-   </div>
+    </div>
 
-   <div class="contenidor fusio">
-   <h1>MODES DE FUSIO</h1>
-   <div class="efecte multiplicar">
-       <div class="fruita">
-            <div class="">
+    <div class="contenidor fusio">
+        <h1>MODES DE FUSIO</h1>
+        <div class="efecte multiplicar">
+            <div class="fruita">
+                <div class="">
+                    <div class="superposada">
+
+                    </div>
+                </div>
+            </div>
+            <p>Multiplicar</p>
+            <div class="interruptor" id="multiplicar">
+                <input type="checkbox" id="activador1">
+                <label for="activador1"></label>
+            </div>
+        </div>
+        <div class="efecte trama">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Multiplicar</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte trama">
-       <div class="fruita">
-            <div class="">
+            <p>Trama</p>
+            <div class="interruptor" id="trama">
+                <input type="checkbox" id="activador2">
+                <label for="activador2"></label>
+            </div>
+        </div>
+        <div class="efecte superposar">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Trama</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte superposar">
-       <div class="fruita">
-            <div class="">
+            <p>Superposar</p>
+            <div class="interruptor" id="superposar">
+                <input type="checkbox" id="activador3">
+                <label for="activador3"></label>
+            </div>
+        </div>
+        <div class="efecte enfosquir">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Superposar</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte enfosquir">
-       <div class="fruita">
-            <div class="">
+            <p>Enfosquir</p>
+            <div class="interruptor" id="enfosquir">
+                <input type="checkbox" id="activador4">
+                <label for="activador4"></label>
+            </div>
+        </div>
+        <div class="efecte aclarir">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Enfosquir</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte aclarir">
-       <div class="fruita">
-            <div class="">
+            <p>Aclarir</p>
+            <div class="interruptor" id="aclarir">
+                <input type="checkbox" id="activador5">
+                <label for="activador5"></label>
+            </div>
+        </div>
+        <div class="efecte colormesfosc">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Aclarir</p>
-       <input type="checkbox">
-   </div>
-   <div class="efecte colormesfosc">
-       <div class="fruita">
-            <div class="">
+            <p>Color més fosc</p>
+            <div class="interruptor" id="colormesfosc">
+                <input type="checkbox" id="activador6">
+                <label for="activador6"></label>
+            </div>
+        </div>
+        <div class="efecte colormesclar">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Color més fosc</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte colormesclar">
-       <div class="fruita">
-            <div class="">
+            <p>Color més clar</p>
+            <div class="interruptor" id="colormesclar">
+                <input type="checkbox" id="activador7">
+                <label for="activador7"></label>
+            </div>
+        </div>
+        <div class="efecte llumintensa">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Color més clar</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte llumintensa">
-       <div class="fruita">
-            <div class="">
+            <p>Llum intensa</p>
+            <div class="interruptor" id="llumintensa">
+                <input type="checkbox" id="activador8">
+                <label for="activador8"></label>
+            </div>
+        </div>
+        <div class="efecte llumsuau">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Llum intensa</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte llumsuau">
-       <div class="fruita">
-            <div class="">
+            <p>Llum suau</p>
+            <div class="interruptor" id="llumsuau">
+                <input type="checkbox" id="activador9">
+                <label for="activador9"></label>
+            </div>
+        </div>
+        <div class="efecte diferencia">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Llum suau</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte diferencia">
-       <div class="fruita">
-            <div class="">
+            <p>Diferència</p>
+            <div class="interruptor" id="diferencia">
+                <input type="checkbox" id="activador10">
+                <label for="activador10"></label>
+            </div>
+        </div>
+        <div class="efecte exclusio">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Diferència</p>
-       <input type="checkbox">
-   </div>
-   <div class="efecte exclusio">
-       <div class="fruita">
-            <div class="">
+            <p>Exclusió</p>
+            <div class="interruptor" id="exclusio">
+                <input type="checkbox" id="activador11">
+                <label for="activador11"></label>
+            </div>
+        </div>
+        <div class="efecte to">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Exclusió</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte to">
-       <div class="fruita">
-            <div class="">
+            <p>To</p>
+            <div class="interruptor" id="to">
+                <input type="checkbox" id="activador12">
+                <label for="activador12"></label>
+            </div>
+        </div>
+        <div class="efecte saturacio">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>To</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte saturacio">
-       <div class="fruita">
-            <div class="">
+            <p>Saturació</p>
+            <div class="interruptor" id="saturacio">
+                <input type="checkbox" id="activador13">
+                <label for="activador13"></label>
+            </div>
+        </div>
+        <div class="efecte color">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Saturació</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte color">
-       <div class="fruita">
-            <div class="">
+            <p>Color</p>
+            <div class="interruptor" id="color">
+                <input type="checkbox" id="activador14">
+                <label for="activador14"></label>
+            </div>
+        </div>
+        <div class="efecte lluminositat">
+            <div class="fruita">
                 <div class="superposada">
 
                 </div>
             </div>
-       </div>
-       <p>Color</p>
-       <input type="checkbox">
-   </div>
-
-   <div class="efecte lluminositat">
-       <div class="fruita">
-            <div class="">
-                <div class="superposada">
-
-                </div>
+            <p>Lluminositat</p>
+            <div class="interruptor" id="lluminositat">
+                <input type="checkbox" id="activador15">
+                <label for="activador15"></label>
             </div>
-       </div>
-       <p>Lluminositat</p>
-       <input type="checkbox">
-   </div>
-</div>
+
+        </div>
+    </div>
 </body>
+
 </html>

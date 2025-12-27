@@ -10,47 +10,47 @@ div{
 #v1{
     left: 18mm;
     top: 8mm;
-    background-image: url(img/Watch1.webp);
+    background-image: url(img/Watch1.png);
 }
 #v2{
     left: 78mm;
     top: 8mm;
-    background-image: url(img/Watch2.webp);
+    background-image: url(img/Watch2.png);
 }
 #v3{
     left: 137mm;
     top: 8mm;
-    background-image: url(img/Watch3.webp);
+    background-image: url(img/Watch3.png);
 }
 #v4{
     left: 18mm;
     top: 102mm;
-    background-image: url(img/Watch4.webp);
+    background-image: url(img/Watch4.png);
 }
 #v5{
     left: 78mm;
     top: 102mm;
-    background-image: url(img/Watch5.webp);
+    background-image: url(img/Watch5.png);
 }
 #v6{
     left: 137mm;
     top: 102mm;
-    background-image: url(img/Watch6.webp);
+    background-image: url(img/Watch6.png);
 }
 #v7{
     left: 18mm;
     top: 195mm;
-    background-image: url(img/Watch7.webp);
+    background-image: url(img/Watch7.png);
 }   
 #v8{
     left: 78mm;
     top: 195mm;
-    background-image: url(img/Watch8.webp);
+    background-image: url(img/Watch8.png);
 }
 #v9{
     left: 137mm;
     top: 195mm;
     background-color:orange;
     /*z-index: 11;*/
-    background-image: url(img/Watch9.webp);
+    background-image: url(img/Watch9.png);
 }

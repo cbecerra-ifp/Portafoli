@@ -58,11 +58,33 @@ main {
     gap: 40px;
     max-width: 90%;
 }
+
 .grid-st .item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transition: transform 1s ease-out;
+}
+.grid-st .item:hover {
+    transform: scale(1.1);
+}
+
+.grid-st .item .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background: rgba(0,0,0,0.45);
+    padding: 6px 12px;
+    border-radius: 6px;
+    z-index: 2;
+    text-align: center;
+    color:#ccc;
+    font-size: 64px;
 }
 
 .grid-st .item img {
@@ -70,12 +92,10 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
-    transition: transform 2s ease-out;
+    
 }
 
-.grid-st .item img:hover {
-    transform: scale(1.20);
-}
+
 
 footer {
     font-size: 40px;

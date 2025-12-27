@@ -1,29 +1,29 @@
 body{
-    background: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .logo{
-    width: 200px;
     height: 200px;
-    background: rgb(0, 30, 54);
+    width: 200px;
+    background-color: rgb(0, 30, 54);
     border-radius: 20%;
     text-align: center;
-    color: rgb(49, 168, 255);
-    font-size: 110px;
-    font-family: Arial, Helvetica, sans-serif;
+    color:	rgb(49, 168, 255);
+    font-size: 130px;
+    font-family:  Arial, Helvetica, sans-serif;
     font-weight: bold;
     align-content: center;
     margin: auto;
-
 }
-.contenidor {
+
+.contenidor{
     width: 1100px;
-    margin: auto;
+    margin: 50 px auto;
 }
 
 .efecte{
-    width: 200px;  
+    width: 200px;
     height: 250px;
     margin: 10px;
     float: left;
@@ -41,23 +41,22 @@ body{
     width: 200px;
 }
 
-.desenfocar img {
-    -webkit-filter: blur(10px);
-        -moz-filter: blur(10px);
-            -o-filter: blur(10px);
-                filter: blur(10px);
+.desenfocar img{
+    -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+         -o-filter: blur(5px);
+            filter: blur(5px);
 }
 
-.grisos img {
+.grisos img{
     filter: grayscale(100%);
-
 }
 
 .ombra img{
-    filter: drop-shadow(6px 6px 6px purple)    
+    filter: drop-shadow(6px 6px 6px purple) ;
 }
 
-.sepia img {
+.sepia img{
     filter: sepia(100%);
 }
 
@@ -66,7 +65,7 @@ body{
 }
 
 .contrast img{
-    filter: contrast(40%);
+    filter: contrast(50%);
 }
 
 .to img{
@@ -74,99 +73,214 @@ body{
 }
 
 .invertir img{
-    filter: invert(100%);
+    filter: invert(50%);
 }
 
 .saturar img{
-    filter: saturate(100%);
+    filter: saturate(300%);
 }
 
 .opacitat img{
-    filter: opacity(40%);
+    filter: opacity(30%);
 }
 
-h1 {
+h1{
     font-size: 48px;
-    background: #ccc;
+    background: #aaa;
     clear: both;
 }
 
-.fruita {
-    background-image: url(../img/maduixa.webp);
-    width: 200px;
-    height: 200px;
+.fruita{
+    background-image: url(../img/maduixa.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    width: 200px;
+    height: 200px;
     margin: auto;
 }
 
-.superposada {
-    background-image: url(../img/llimona.webp);
-    width: 200px;
-    height: 200px;
+.superposada{
+    background-image: url(../img/llimona.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    width: 200px;
+    height: 200px;
     margin: auto;
 }
 
-.multiplicar .superposada {
+.multiplicar .superposada{
     mix-blend-mode: multiply;
 }
 
-.trama .superposada {
+.trama .superposada{
     mix-blend-mode: screen;
 }
 
-.superposar .superposada {
+.superposar .superposada{
     mix-blend-mode: overlay;
 }
 
-.enfosquir .superposada {
+.enfosquir .superposada{
     mix-blend-mode: darken;
 }
 
-.aclarir .superposada {
+.aclarir .superposada{
     mix-blend-mode: lighten;
 }
 
-.colormesfosc .superposada {
-    mix-blend-mode: color-dodge;
-}
-
-.colormesclar .superposada {
-    mix-blend-mode: color-burn;
-}
-
-.llumintensa .superposada {
+.colormesfosc .superposada{
     mix-blend-mode: hard-light;
 }
 
-.llumsuau .superposada {
+.colormesclar .superposada{
     mix-blend-mode: soft-light;
 }
 
-.diferencia .superposada {
-    mix-blend-mode: ;
+.llumintensa .superposada{
+    mix-blend-mode: color-burn;
 }
 
-.exclusio .superposada {
-
+llumsuau .superposada{
+    mix-blend-mode: color-dodge;
 }
 
-.to .superposada {
+.diferencia .superposada{
+    mix-blend-mode: difference;
+}
+
+.exclusio .superposada{
+    mix-blend-mode: exclusion;
+}
+
+.to .superposada{
     mix-blend-mode: hue;
 }
 
-.saturacio .superposada {
-    mix-blend-mode: ;
+.saturacio .superposada{
+    mix-blend-mode: saturation;
 }
 
-.color .superposada {
-    mix-blend-mode: ;
+.color .superposada{
+    mix-blend-mode: color;
 }
 
-.lluminositat .superposada {
-    mix-blend-mode: ;
+.lluminositat .superposada{
+    mix-blend-mode: luminosity;
+}
+
+.interruptor {
+  width:40px;
+  height:25px;
+  background:#ccc;
+  position:relative;
+  border-radius:12.5px;
+  border: 1px solid #999;
+  margin:auto;
+}
+
+input[type=checkbox]{
+  visibility:hidden;
+  display:none;
+}
+
+label {
+  display:block;
+  width:23px;
+  height:23px;
+  background:rgb(189, 11, 64);
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius:25px;
+  box-shadow:5px 0 5px grey;
+  margin:auto;
+}
+
+input[type=checkbox]:checked+label {
+  display:block;
+  width:23px;
+  height:23px;
+  background:rgb(86, 2, 94);
+  position:absolute;
+  top:0;
+  left:15px;
+  box-shadow:-5px 0 5px grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=range]{
+  -webkit-appearance:none;
+  width:100%;
+  background:transparent;
+  margin:10px
+}
+
+input[type=range]::-webkit-slider-thumb{
+   -webkit-appearance:none;
+}
+
+input[type=range]:focus{
+   -webkit-appearance:none;
+}
+
+input[type=range]::-ms-track{
+  witdh:100%;
+  cursos:pointer;
+}
+
+/*anem fent apareixer els diferents elements*/
+/*fem apareixer la maneta*/
+input[type=range]::-webkit-slider-thumb{
+  border:0.2px solid #333;
+  height: 15px;
+  width:15px;
+  border-radius:100%;
+  background: #fff;
+  cursor:pointer;
+  margin-top:-7px;
+  box-shadow: 1px 1px 1px #000;
+}
+
+/*fem apareixer el carril*/
+
+input[type=range]::-webkit-slider-runnable-track{
+  width:100%;
+  height:2px;
+  cursor:pointer;
+  box-shadow:0.5px 0.5px 0.5px #000;
+  background: white;
+  border-radius:1.3px;
+  border:0.2px solid grey;
+}
+
+input[type=range]::-moz-slider-runnable-track{
+  width:100%;
+  height:2px;
+  cursor:pointer;
+  box-shadow:0.5px 0.5px 0.5px #000;
+  background: white;
+  border-radius:1.3px;
+  border:0.2px solid grey;
+}
+
+input[type=range]::-ms-track{
+  width:100%;
+  height:2px;
+  cursor:pointer;
+  box-shadow:0.5px 0.5px 0.5px #000;
+  background: white;
+  border-radius:1.3px;
+  border:0.2px solid grey;
 }
