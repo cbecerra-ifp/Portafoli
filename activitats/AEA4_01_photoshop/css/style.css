@@ -1,0 +1,172 @@
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 30, 54);
+    border-radius: 20%;
+    text-align: center;
+    color: rgb(49, 168, 255);
+    font-size: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-content: center;
+    margin: auto;
+
+}
+.contenidor {
+    width: 1100px;
+    margin: auto;
+}
+
+.efecte{
+    width: 200px;  
+    height: 250px;
+    margin: 10px;
+    float: left;
+}
+
+.efecte img{
+    width: 200px;
+}
+
+.efecte p{
+    text-align: center;
+}
+
+.efecte input{
+    width: 200px;
+}
+
+.desenfocar img {
+    -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+                filter: blur(10px);
+}
+
+.grisos img {
+    filter: grayscale(100%);
+
+}
+
+.ombra img{
+    filter: drop-shadow(6px 6px 6px purple)    
+}
+
+.sepia img {
+    filter: sepia(100%);
+}
+
+.lluminositat img{
+    filter: brightness(200%);
+}
+
+.contrast img{
+    filter: contrast(40%);
+}
+
+.to img{
+    filter: hue-rotate(90deg);
+}
+
+.invertir img{
+    filter: invert(100%);
+}
+
+.saturar img{
+    filter: saturate(100%);
+}
+
+.opacitat img{
+    filter: opacity(40%);
+}
+
+h1 {
+    font-size: 48px;
+    background: #ccc;
+    clear: both;
+}
+
+.fruita {
+    background-image: url(../img/maduixa.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+.superposada {
+    background-image: url(../img/llimona.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+.multiplicar .superposada {
+    mix-blend-mode: multiply;
+}
+
+.trama .superposada {
+    mix-blend-mode: screen;
+}
+
+.superposar .superposada {
+    mix-blend-mode: overlay;
+}
+
+.enfosquir .superposada {
+    mix-blend-mode: darken;
+}
+
+.aclarir .superposada {
+    mix-blend-mode: lighten;
+}
+
+.colormesfosc .superposada {
+    mix-blend-mode: color-dodge;
+}
+
+.colormesclar .superposada {
+    mix-blend-mode: color-burn;
+}
+
+.llumintensa .superposada {
+    mix-blend-mode: hard-light;
+}
+
+.llumsuau .superposada {
+    mix-blend-mode: soft-light;
+}
+
+.diferencia .superposada {
+    mix-blend-mode: ;
+}
+
+.exclusio .superposada {
+
+}
+
+.to .superposada {
+    mix-blend-mode: hue;
+}
+
+.saturacio .superposada {
+    mix-blend-mode: ;
+}
+
+.color .superposada {
+    mix-blend-mode: ;
+}
+
+.lluminositat .superposada {
+    mix-blend-mode: ;
+}

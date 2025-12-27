@@ -1,0 +1,116 @@
+body {
+    background-color: beige;
+}
+
+.conjunt {
+    width: 300px;
+    height: 700px;
+}
+
+.fulla {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 100% 0% 100% 0%;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    transform-origin: 0px 100px;
+    background-image: linear-gradient(green, olive);
+}
+
+.flor {
+    width: 300px;
+    height: 300px;
+    position: relative; 
+    float: left;
+    left: 0px;
+}
+
+.f1 {
+    transform: rotate(0deg);
+    background: lightsteelblue;
+     background-image: linear-gradient( lightsteelblue, blue);
+}
+
+.f2 {
+    transform: rotate(60deg);
+    background: lightcyan;
+     background-image: linear-gradient(lightcyan, lightblue);
+}
+
+.f3 {
+    transform: rotate(120deg);
+    background: lightpink;
+     background-image: linear-gradient(lightpink, purple);
+}
+
+.f4 {
+    transform: rotate(180deg);
+    background: lightgreen;
+     background-image: linear-gradient(lightgreen, olive);
+}
+
+.f5 {
+    transform: rotate(240deg);
+    background: lightseagreen;
+     background-image: linear-gradient(lightseagreen, seagreen);
+}
+
+.f6 {
+    transform: rotate(300deg);
+    background: lightcoral;
+     background-image: linear-gradient(lightcoral, coral);
+}
+
+.p1 {
+    transform: rotate(360deg);
+    background: green;
+    position: absolute;
+    top: 400px;
+}
+
+.p1 {
+    transform: rotate(360deg);
+    background: green;
+    background-image: linear-gradient(lightgreen,green);
+    position: absolute;
+    top: 400px;
+}
+
+
+
+.cor{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: yellow;
+     background-image: radial-gradient(yellow,sgold);
+    position: absolute;
+    top: 125px;
+    left: 125px;
+}
+
+.pal{
+    width: 15px;
+    height: 500px;
+    background: green;
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    background-image: linear-gradient(lightgreen,green);
+}
+
+.conjunt:hover .flor{
+    animation: 4s rotacio linear infinite;
+}
+
+@keyframes rotacio {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

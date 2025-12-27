@@ -1,0 +1,41 @@
+body{
+    background-color: orange;
+}
+
+div{
+    width: 285px;
+    height: 450px;
+    background-color: pink;
+    margin: 10px;
+    float: left;
+    background-size: 100%;
+}
+
+#v1{
+    background-image: url(img/Watch1.png);
+
+}
+#v2{
+    background-image: url(img/Watch2.png);
+}
+#v3{
+    background-image: url(img/Watch3.png);
+}
+#v4{
+    background-image: url(img/Watch4.png);
+}
+#v5{
+    background-image: url(img/Watch5.png);
+}
+#v6{
+    background-image: url(img/Watch6.png);
+}
+#v7{
+    background-image: url(img/Watch7.png);
+}
+#v8{
+    background-image: url(img/Watch8.png);
+}
+#v9{
+    background-image: url(img/Watch9.png);
+}

@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenidor {
+    width: 1716px;
+    margin: auto;
+}
+
+.nav {
+    height: 166px;
+}
+
+.friends {
+    height: 180px;
+    width: 1200px;
+    margin: auto;
+}
+
+.pics {
+    height: 1860px;
+}
+
+.logo {
+    width: 212px;
+    height: 42px;
+    background-color: lightpink;
+    float: left;
+    background-image: url(../img/logo.jpg);
+    margin: 50px 0 0 0;
+}
+
+.menu {
+    width: 307px;
+    height: 53px;
+    float: left;
+    margin: 45px 0 0 492px;
+
+}
+.menu ul{
+    margin: 0;
+}
+
+.menu ul li {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    float: left;
+    display: block;
+    background-image: url(../img/menu.jpg);
+}
+
+ .menu ul li:hover{
+    opacity: 0.8;
+ }
+
+.inici {
+    background-position: -10px -5px;
+}
+
+.cerca {
+    background-position: -94px -5px;
+}
+
+.directes {
+    background-position: -177px -5px;
+}
+
+.favorits {
+    background-position: -262px -5px ;
+}
+
+.perfil {
+    width: 80px;
+    height: 120px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    opacity: 0.6;
+
+}
+.foto {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/perfil.jpg);
+    border: brown 5px solid;
+    box-shadow: inset 0px 0px 2px white;
+} 
+
+.alba {
+    background-image: url(../img/alba.jpeg);
+
+}
+
+.aaron {
+    background-image: url(../img/aaron.jpeg)
+}
+
+
+.yoli {
+    background-image: url(../img/yoli.jpeg);
+}
+
+.tolga {
+    background-image: url(../img/tolga.jpeg);
+
+}
+
+.chris {
+    background-image: url(../img/chris.jpeg);
+}
+
+.laura {
+    background-image: url(../img/laura.jpeg);
+}
+
+.aria {
+    background-image: url(../img/aria.jpeg);
+}
+
+.hera {
+    background-image: url(../img/hera.jpeg);
+}
+
+.daryl {
+    background-image: url(../img/daryl.jpeg);
+}
+
+.klaus {
+    background-image: url(../img/klaus.jpeg);
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+.afegir {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    left:60px;
+    top: -75px;
+    color: white;
+    line-height: 20px;
+}
+
+.post {
+    height: 620px;
+    width: 536px;
+    float: left;
+    margin: 18px;
+}
+
+.imatge {
+    height: 536px;
+    width: 536px;
+    background-image: url(../img/ifpagram-sect_12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.info {
+    width: 268px;
+    height: 84px;
+    float: left;
+}
+
+.reaccions {
+    width: 268px;
+    height: 84px;
+    float: left;
+}
+
+.autor{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-image: url(../img/perfil.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+}
+
+.usuari{
+    height: 25px;
+    width: 198px;
+    margin: 10px 0 0 0;
+    float: left;
+}
+
+.quan{
+    height: 25px;
+    width: 198px;
+    margin: 0;
+    float: left;
+    color: gray;
+    font-size: 14px;
+}
+
+.likes{
+height: 25px;
+width: 8'0'px;
+margin: 13px 54px 10px 25px;
+float: left;
+text-align: left;
+}
+
+.cors{
+    height: 25px;
+    width: 25px;   
+    margin: 10px 24px 10px 0px;
+    float: left;
+    background-image: url(../img/menu.jpg);
+    background-size: cover;
+    background-position: -120px -25px;
+
+}
+
+.mes{
+    height: 25px;
+    width: 25px;
+    margin: 10px 0px 10px 25px;
+    float: left;
+    text-align: center;
+}
+
+.img1{
+    background-image: url(../img/ifpagram_10.jpg);
+}
+.img2{
+    background-image: url(../img/ifpagram_12.jpg);
+}
+.img3{
+    background-image: url(../img/ifpagram_14.jpg);
+}
+.img4{
+    background-image: url(../img/ifpagram_19.jpg);
+}
+.img5{
+    background-image: url(../img/ifpagram_20.jpg);
+}
+.img6{
+    background-image: url(../img/ifpagram_21.jpg);
+}
+.img7{
+    background-image: url(../img/ifpagram_25.jpg);
+}
+.img8{
+    background-image: url(../img/ifpagram_26.jpg);
+}
+.img9{
+    background-image: url(../img/ifpagram_27.jpg);
+}
