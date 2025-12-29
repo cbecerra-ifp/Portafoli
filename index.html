@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Portfolio</title>
 </head>
 
-<body id="inici">
+<body>
     <header>
         <img src="img/jurassic.webp" id="logo" />
     </header>
@@ -17,82 +18,87 @@
             <img src="img/Perfil.webp" id="perfil" />
             <nav>
                 <ul>
-                    <li><a href="#inici">Inici</a></li>
+                    <li><a href="#inici">Activitats</a></li>
                     <li><a href="#quisoc">Sobre mi</a></li>
                     <li><a href="#peu">Contacte</a></li>
                 </ul>
-                <img src="img/wayne.webp" id="wayne">
             </nav>
+            <p id="dennis">Clica a la imatge per demanar ajuda a Dennis Nedry </p>
+            <img src="img/wayne.webp" id="wayne" onclick="missatge()">
+            <p id="missatge">No et puc ajudar, no em valoren res. Coneixeu algú que pugui depurar dos milions de línies de codi pel que em paguen en aquesta feina?</p>
         </aside>
         <div class="content">
-        <section class="grid-st">
-            <a href="activitats/AEA1_02_horari/index.html">
-                <div class="item">
-                    <p class="centered">Horari</p>
-                    <img src="img/estegosaurio.webp" alt="Estegosaurio">
-                </div>
-            </a>
-            <a href="activitats/AEA2_01_feedly/index.html">
-                <div class="item">
-                    <p class="centered">Feedly</p>
-                    <img src="img/anquilosaurio.webp" alt="Anquilosaurio">
-                </div>
-            </a>
-            <a href="activitats/AEA3_01_float/index.html">
-                <div class="item">
-                    <p class="centered">Float</p>
-                    <img src="img/brontosaurus.webp" alt="Brontosaurus">
-                </div>
-            </a>
-            <a href="activitats/AEA3_03_Watchmen/index.html">
-                <div class="item">
-                    <p class="centered">Watchmen</p>
-                    <img src="img/deinonychus.webp" alt="Deinonychus">
-                </div>
-            </a>
-            <a href="activitats/AEA3_04_dames/index.html">
-                <div class="item">
-                    <p class="centered">Dames</p>
-                    <img src="img/trex.webp" alt="T-Rex">
-                </div>
-            </a>
-            <a href="activitats/AEA3_05_ifpgram/index.html">
-                <div class="item">
-                    <p class="centered">Ifpagram</p>
-                    <img src="img/spinosaurus.webp" alt="Spinosaurus">
-                </div>
-            </a>
-            <a href="activitats/AEA4_01_photoshop/index.html">
-                <div class="item">
-                    <p class="centered">Photoshop</p>
-                    <img src="img/parasaurolophus.webp" alt="Parasaurolophus">
-                </div>
-            </a>
-            <a href="activitats/AEA6_01_floreta/index.html">
-                <div class="item">
-                    <p class="centered">Floreta</p>
-                    <img src="img/tricetarops.webp" alt="Tricetarops">
-                </div>
-            </a>
-            <a href="activitats/AEA7_01_progres/index.html">
-                <div class="item">
-                    <p class="centered">Progres</p>
-                    <img src="img/velociraptor.webp" alt="Velociraptor">
-                </div>
-            </a>  
-            <a></a>
-            <a href="activitats/star_wars/proyecto_Cristina_Becerra_ruiz.html">
-                <div class="item">
-                    <p class="centered" id="bonus">Bonus Track</p>
-                    <img src="img/starwars.webp" alt="Star Wars" id="starwars">
-                </div>
-            </a>
-        </section>
+            <section class="grid-st" id="inici">
+                <a href="activitats/AEA1_02_horari/index.html">
+                    <div class="item">
+                        <p class="centered">Horari</p>
+                        <img src="img/estegosaurio.webp" alt="Estegosaurio">
+                    </div>
+                </a>
+                <a href="activitats/AEA2_01_feedly/index.html">
+                    <div class="item">
+                        <p class="centered">Feedly</p>
+                        <img src="img/anquilosaurio.webp" alt="Anquilosaurio">
+                    </div>
+                </a>
+                <a href="activitats/AEA3_01_float/index.html">
+                    <div class="item">
+                        <p class="centered">Float</p>
+                        <img src="img/brontosaurus.webp" alt="Brontosaurus">
+                    </div>
+                </a>
+                <a href="activitats/AEA3_03_Watchmen/index.html">
+                    <div class="item">
+                        <p class="centered">Watchmen</p>
+                        <img src="img/deinonychus.webp" alt="Deinonychus">
+                    </div>
+                </a>
+                <a href="activitats/AEA3_04_dames/index.html">
+                    <div class="item">
+                        <p class="centered">Dames</p>
+                        <img src="img/trex.webp" alt="T-Rex">
+                    </div>
+                </a>
+                <a href="activitats/AEA3_05_ifpgram/index.html">
+                    <div class="item">
+                        <p class="centered">Ifpagram</p>
+                        <img src="img/spinosaurus.webp" alt="Spinosaurus">
+                    </div>
+                </a>
+                <a href="activitats/AEA4_01_photoshop/index.html">
+                    <div class="item">
+                        <p class="centered">Photoshop</p>
+                        <img src="img/parasaurolophus.webp" alt="Parasaurolophus">
+                    </div>
+                </a>
+                <a href="activitats/AEA6_01_floreta/index.html">
+                    <div class="item">
+                        <p class="centered">Floreta</p>
+                        <img src="img/tricetarops.webp" alt="Tricetarops">
+                    </div>
+                </a>
+                <a href="activitats/AEA7_01_progres/index.html">
+                    <div class="item">
+                        <p class="centered">Progres</p>
+                        <img src="img/velociraptor.webp" alt="Velociraptor">
+                    </div>
+                </a>
+                <a></a>
+                <a href="activitats/star_wars/proyecto_Cristina_Becerra_ruiz.html">
+                    <div class="item">
+                        <p class="centered" id="bonus">Bonus Track</p>
+                        <img src="img/starwars.webp" alt="Star Wars" id="starwars">
+                    </div>
+                </a>
+            </section>
 
-        <section id="quisoc">
-            <p>Actualment, m'estic especialitzant en disseny gràfic amb l'objectiu d'ampliar els meus coneixements i habilitats en l'àmbit del disseny. Busco una oportunitat professional que em permeti aplicar i continuar desenvolupant els coneixements adquirits, contribuint a l'èxit de l'empresa a través de la meva creativitat i dedicació.</p>
-            <p>Soc creativa i resolutiva, Estic preparada per a treballar amb tu i crear nous projectes!</p>
-        </section>
+            <section id="quisoc">
+                <p>Actualment, m'estic especialitzant en disseny gràfic amb l'objectiu d'ampliar els meus coneixements i
+                    habilitats en l'àmbit del disseny. Busco una oportunitat professional que em permeti aplicar i
+                    continuar desenvolupant els coneixements adquirits, contribuint a l'èxit de l'empresa a través de la
+                    meva creativitat i dedicació.</p>
+                <p>Soc creativa i resolutiva, Estic preparada per a treballar amb tu i crear nous projectes!</p>
+            </section>
         </div>
     </main>
     <footer id="peu">
@@ -117,6 +123,7 @@
             </a>
         </div>
     </footer>
+
 </body>
 
 </html>
