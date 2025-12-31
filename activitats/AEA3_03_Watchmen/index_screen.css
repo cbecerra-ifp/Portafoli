@@ -1,8 +1,8 @@
-body{
+body {
     background-color: orange;
 }
 
-div{
+div {
     width: 285px;
     height: 450px;
     background-color: pink;
@@ -11,31 +11,68 @@ div{
     background-size: 100%;
 }
 
-#v1{
+#v1 {
     background-image: url(img/Watch1.png);
 
 }
-#v2{
+
+#v2 {
     background-image: url(img/Watch2.png);
 }
-#v3{
+
+#v3 {
     background-image: url(img/Watch3.png);
 }
-#v4{
+
+#v4 {
     background-image: url(img/Watch4.png);
 }
-#v5{
+
+#v5 {
     background-image: url(img/Watch5.png);
 }
-#v6{
+
+#v6 {
     background-image: url(img/Watch6.png);
 }
-#v7{
+
+#v7 {
     background-image: url(img/Watch7.png);
 }
-#v8{
+
+#v8 {
     background-image: url(img/Watch8.png);
 }
-#v9{
+
+#v9 {
     background-image: url(img/Watch9.png);
+}
+
+/* Botó per tornar a la pagina principal */
+.boton-flotante-volver {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #22351f;
+    color: #98ed90;
+    border: 3px solid #98ed90;
+    padding: 12px 20px;
+    font-family: 'Geo', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.boton-flotante-volver:hover {
+    color: #f84040;
+    border-color: #f84040;
+    transform: scale(1.05);
+    background-color: #000;
 }

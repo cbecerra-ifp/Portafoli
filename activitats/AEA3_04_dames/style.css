@@ -10,7 +10,6 @@ body {
     border: 10px solid rgba(128, 0, 0, 0.452);
 }
 
-
 .filera:nth-child(2n) {
     background-color: white;
     width: 800px;
@@ -31,7 +30,7 @@ body {
     float: left;
 }
 
-.fitxa{
+.fitxa {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -41,46 +40,49 @@ body {
 
 
 
-    .filera:nth-child(2n) .casella:nth-child(2n){
+.filera:nth-child(2n) .casella:nth-child(2n) {
     background-image: linear-gradient(45deg, gold, orange);
 
 }
 
-.filera:nth-child(2n) .casella:nth-child(2n+1){
+.filera:nth-child(2n) .casella:nth-child(2n+1) {
     background-image: linear-gradient(45deg, lightblue, rgb(111, 111, 255));
 
 }
 
-.filera:nth-child(2n+1) .casella:nth-child(2n){
+.filera:nth-child(2n+1) .casella:nth-child(2n) {
     background-image: linear-gradient(45deg, lightblue, rgb(111, 111, 255));
 }
 
-.filera:nth-child(2n+1) .casella:nth-child(2n+1){
+.filera:nth-child(2n+1) .casella:nth-child(2n+1) {
     background-image: linear-gradient(45deg, gold, orange);
 }
 
 
 
-    .filera:nth-child(2n) .casella:nth-child(2n) .fitxa{
+.filera:nth-child(2n) .casella:nth-child(2n) .fitxa {
     background-image: linear-gradient(45deg, rgb(90, 90, 90), black);
 
 }
 
-.filera:nth-child(2n) .casella:nth-child(2n+1) .fitxa{
+.filera:nth-child(2n) .casella:nth-child(2n+1) .fitxa {
     background-image: linear-gradient(45deg, white, rgb(221, 221, 221));
 
 
 }
 
-.filera:nth-child(2n+1) .casella:nth-child(2n) .fitxa{
+.filera:nth-child(2n+1) .casella:nth-child(2n) .fitxa {
     background-image: linear-gradient(45deg, white, rgb(221, 221, 221));
 }
 
-.filera:nth-child(2n+1) .casella:nth-child(2n+1) .fitxa{
+.filera:nth-child(2n+1) .casella:nth-child(2n+1) .fitxa {
     background-image: linear-gradient(45deg, rgb(90, 90, 90), black);
 }
 
-.filera:nth-child(3) .fitxa, .filera:nth-child(4) .fitxa, .filera:nth-child(5) .fitxa, .filera:nth-child(6) .fitxa {
+.filera:nth-child(3) .fitxa,
+.filera:nth-child(4) .fitxa,
+.filera:nth-child(5) .fitxa,
+.filera:nth-child(6) .fitxa {
     display: none;
 }
 
@@ -92,24 +94,54 @@ otro ejemplo a lo anterior
 
 */
 
-.fitxa{
+.fitxa {
     position: relative;
 }
 
-.fitxa:hover{
+.fitxa:hover {
     top: 100px;
 }
 
-.filera:nth-child(1) .fitxa:hover{
-    top:200px;
-
-}
-.filera:nth-child(7) .fitxa:hover{
-    top:-100px;
+.filera:nth-child(1) .fitxa:hover {
+    top: 200px;
 
 }
 
-.filera:nth-child(8) .fitxa:hover{
-    top:-200px;
+.filera:nth-child(7) .fitxa:hover {
+    top: -100px;
 
-} 
+}
+
+.filera:nth-child(8) .fitxa:hover {
+    top: -200px;
+
+}
+
+/* Botó per tornar a la pagina principal */
+.boton-flotante-volver {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #22351f;
+    color: #98ed90;
+    border: 3px solid #98ed90;
+    padding: 12px 20px;
+    font-family: 'Geo', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.boton-flotante-volver:hover {
+    color: #f84040;
+    border-color: #f84040;
+    transform: scale(1.05);
+    background-color: #000;
+}

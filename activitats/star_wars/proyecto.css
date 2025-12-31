@@ -4,109 +4,114 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-    font-family: 'Press Start 2P', cursive;
-    color: #8A0829;
-    background-size: cover;
+	font-family: 'Press Start 2P', cursive;
+	color: #8A0829;
+	background-size: cover;
 }
 
-img{
+img {
 	max-width: 100%;
 	vertical-align: top;
 }
 
-#punto{
+#punto {
 	display: flex;
 	height: 20px;
-    width: 20px;
-    margin-top: 10px; 
+	width: 20px;
+	margin-top: 10px;
 }
 
-#caja_img{
+#caja_img {
 	display: flex;
 	background-size: cover;
 	text-align: center;
 	padding: 20px;
 }
 
-#caja_botones{
+#caja_botones {
 	background-size: cover;
-    height: 100%;
-    width: 100% ;
-    text-align: center;
+	height: 100%;
+	width: 100%;
+	text-align: center;
 }
 
-#caja_creditos{
-	border:3px solid #8A0829;
+#caja_creditos {
+	border: 3px solid #8A0829;
 	border-radius: 30px;
 	padding: 20px 20px 20px 20px;
 	background-size: cover;
 	margin-right: 83%;
 }
 
-#casilla1{
-	border:3px solid #8A0829;
+#casilla1 {
+	border: 3px solid #8A0829;
 	border-radius: 30px;
 	background-color: white;
 	padding: 20px 20px 20px 20px;
 	height: 15%;
-    width: 15%;
+	width: 15%;
 	margin-left: 23%;
 }
 
-#casilla2, #casilla3{
-	border:3px solid #8A0829;
+#casilla2,
+#casilla3 {
+	border: 3px solid #8A0829;
 	border-radius: 30px;
 	background-color: white;
 	padding: 20px 20px 20px 20px;
 	height: 15%;
-    width: 15%;
+	width: 15%;
 }
 
-#tirar{
+#tirar {
 	box-shadow: 0px 10px 14px -7px #f29c93;
-	background:linear-gradient(to bottom, #6200fec4 5%, #ce0100 100%);
-	background-color:#fe1a00;
-	border-radius:100px;
-	border:3px solid #8A0829;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
+	background: linear-gradient(to bottom, #6200fec4 5%, #ce0100 100%);
+	background-color: #fe1a00;
+	border-radius: 100px;
+	border: 3px solid #8A0829;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
 	font-family: 'Press Start 2P', cursive;
-	padding:80px 60px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
+	padding: 80px 60px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #b23e35;
 	margin-left: 45%;
 }
 
-#tirar:hover, #tirar1:hover, #tirar2:hover, #tirar3:hover{
+#tirar:hover,
+#tirar1:hover,
+#tirar2:hover,
+#tirar3:hover {
 	color: black;
 }
-  
 
-#tirar1, #tirar2, #tirar3{
+#tirar1,
+#tirar2,
+#tirar3 {
 	box-shadow: 0px 10px 14px -7px #f29c93;
-	background:linear-gradient(to bottom, #fe1a00 5%, #760066 100%);
-	border-radius:100px;
-	border:3px solid #8A0829;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
+	background: linear-gradient(to bottom, #fe1a00 5%, #760066 100%);
+	border-radius: 100px;
+	border: 3px solid #8A0829;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
 	font-family: 'Press Start 2P', cursive;
-	padding:20px 20px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
+	padding: 20px 20px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #b23e35;
 }
 
-#img_premio{
+#img_premio {
 	height: 60px;
-    width: 60px;
-    margin-top: 20px; 
+	width: 60px;
+	margin-top: 20px;
 	display: flex;
 	padding-left: 33%;
 }
 
 .overlay {
-	background: rgba(0,0,0,.3);
+	background: rgba(0, 0, 0, .3);
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -124,7 +129,7 @@ img{
 
 .popup {
 	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
 	border-radius: 3px;
 	font-family: 'Press Start 2P', cursive;
 	padding: 20px;
@@ -144,5 +149,36 @@ img{
 	color: #000;
 }
 
-.popup.active {	transform: scale(1); opacity: 1;
+.popup.active {
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Botó per tornar a la pagina principal */
+.boton-flotante-volver {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 9999;
+	background-color: #22351f;
+	color: #98ed90;
+	border: 3px solid #98ed90;
+	padding: 12px 20px;
+	font-family: 'Geo', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+}
+
+.boton-flotante-volver:hover {
+	color: #f84040;
+	border-color: #f84040;
+	transform: scale(1.05);
+	background-color: #000;
 }

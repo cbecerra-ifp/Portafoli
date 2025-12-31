@@ -29,8 +29,6 @@
     font-display: swap;
 }
 
-
-
 body {
     font-family: var(--tipografia1);
     font-size: 2rem;
@@ -45,17 +43,15 @@ h1 {
     font-style: normal;
 }
 
-
-
 p {
-  font-family: var(--tipografia5);
-  color: var(--color9);
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin:0 auto;
-  max-width: 1920px;
-  font-family: 'Andada';
+    font-family: var(--tipografia5);
+    color: var(--color9);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    max-width: 1920px;
+    font-family: 'Andada';
 }
 
 .progres {
@@ -63,7 +59,7 @@ p {
     width: 100%;
     background: var(--color4);
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -71,8 +67,8 @@ p {
     animation: analitzador linear;
     animation-timeline: scroll();
     -webkit-animation-timeline: scroll();
-       -moz-animation-timeline: scroll();
-            animation-timeline: scroll();
+    -moz-animation-timeline: scroll();
+    animation-timeline: scroll();
 }
 
 @keyframes analitzador {
@@ -81,37 +77,34 @@ p {
     }
 }
 
-@media (max-width:480px) 
-    {
-        body {
+@media (max-width:480px) {
+    body {
         background-color: var(--color6);
     }
 
+}
+
+@media (min-width:481px) and (max-width:1279px) {
+    body {
+        background-color: var(--color8);
     }
 
-@media (min-width:481px) and (max-width:1279px) 
-    {
-        body {
-            background-color: var(--color8);
+    p {
+        margin: 2rem;
     }
 
-        p {
-            margin: 2rem;
+}
+
+@media (min-width:1280px) {
+    body {
+        background-color: var(--color2);
     }
 
+    p {
+        columns: 2;
+        text-align: justify;
     }
-
-    @media (min-width:1280px)
-    {
-        body {
-            background-color: var(--color2);
-    }
-
-        p{
-            columns: 2;
-            text-align: justify;
-        }
-    }
+}
 
 .rodona {
     width: 15rem;
@@ -119,4 +112,33 @@ p {
     background: var(--color4);
     border-radius: 50%;
     margin: auto;
+}
+
+/* Botó per tornar a la pagina principal */
+.boton-flotante-volver {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #22351f;
+    color: #98ed90;
+    border: 3px solid #98ed90;
+    padding: 12px 20px;
+    font-family: 'Geo', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.boton-flotante-volver:hover {
+    color: #f84040;
+    border-color: #f84040;
+    transform: scale(1.05);
+    background-color: #000;
 }

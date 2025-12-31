@@ -38,7 +38,8 @@ body {
     margin: 45px 0 0 492px;
 
 }
-.menu ul{
+
+.menu ul {
     margin: 0;
 }
 
@@ -51,9 +52,9 @@ body {
     background-image: url(../img/menu.jpg);
 }
 
- .menu ul li:hover{
+.menu ul li:hover {
     opacity: 0.8;
- }
+}
 
 .inici {
     background-position: -10px -5px;
@@ -68,7 +69,7 @@ body {
 }
 
 .favorits {
-    background-position: -262px -5px ;
+    background-position: -262px -5px;
 }
 
 .perfil {
@@ -80,6 +81,7 @@ body {
     opacity: 0.6;
 
 }
+
 .foto {
     width: 80px;
     height: 80px;
@@ -90,7 +92,7 @@ body {
     background-image: url(../img/perfil.jpg);
     border: brown 5px solid;
     box-shadow: inset 0px 0px 2px white;
-} 
+}
 
 .alba {
     background-image: url(../img/alba.jpeg);
@@ -145,7 +147,7 @@ body {
     border-radius: 50%;
     border: 5px solid white;
     position: relative;
-    left:60px;
+    left: 60px;
     top: -75px;
     color: white;
     line-height: 20px;
@@ -178,7 +180,7 @@ body {
     float: left;
 }
 
-.autor{
+.autor {
     width: 50px;
     height: 50px;
     margin: 10px;
@@ -188,14 +190,14 @@ body {
     float: left;
 }
 
-.usuari{
+.usuari {
     height: 25px;
     width: 198px;
     margin: 10px 0 0 0;
     float: left;
 }
 
-.quan{
+.quan {
     height: 25px;
     width: 198px;
     margin: 0;
@@ -204,17 +206,17 @@ body {
     font-size: 14px;
 }
 
-.likes{
-height: 25px;
-width: 8'0'px;
-margin: 13px 54px 10px 25px;
-float: left;
-text-align: left;
+.likes {
+    height: 25px;
+    width: 8'0' px;
+    margin: 13px 54px 10px 25px;
+    float: left;
+    text-align: left;
 }
 
-.cors{
+.cors {
     height: 25px;
-    width: 25px;   
+    width: 25px;
     margin: 10px 24px 10px 0px;
     float: left;
     background-image: url(../img/menu.jpg);
@@ -223,7 +225,7 @@ text-align: left;
 
 }
 
-.mes{
+.mes {
     height: 25px;
     width: 25px;
     margin: 10px 0px 10px 25px;
@@ -231,30 +233,67 @@ text-align: left;
     text-align: center;
 }
 
-.img1{
+.img1 {
     background-image: url(../img/ifpagram_10.jpg);
 }
-.img2{
+
+.img2 {
     background-image: url(../img/ifpagram_12.jpg);
 }
-.img3{
+
+.img3 {
     background-image: url(../img/ifpagram_14.jpg);
 }
-.img4{
+
+.img4 {
     background-image: url(../img/ifpagram_19.jpg);
 }
-.img5{
+
+.img5 {
     background-image: url(../img/ifpagram_20.jpg);
 }
-.img6{
+
+.img6 {
     background-image: url(../img/ifpagram_21.jpg);
 }
-.img7{
+
+.img7 {
     background-image: url(../img/ifpagram_25.jpg);
 }
-.img8{
+
+.img8 {
     background-image: url(../img/ifpagram_26.jpg);
 }
-.img9{
+
+.img9 {
     background-image: url(../img/ifpagram_27.jpg);
+}
+
+/* Botó per tornar a la pagina principal */
+.boton-flotante-volver {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #22351f;
+    color: #98ed90;
+    border: 3px solid #98ed90;
+    padding: 12px 20px;
+    font-family: 'Geo', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.boton-flotante-volver:hover {
+    color: #f84040;
+    border-color: #f84040;
+    transform: scale(1.05);
+    background-color: #000;
 }

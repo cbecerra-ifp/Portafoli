@@ -43,10 +43,41 @@
             text-align: justify;
             margin: auto;
         }
+
+        /* Botó per tornar a la pagina principal */
+        .boton-flotante-volver {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            background-color: #22351f;
+            color: #98ed90;
+            border: 3px solid #98ed90;
+            padding: 12px 20px;
+            font-family: 'Geo', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .boton-flotante-volver:hover {
+            color: #f84040;
+            border-color: #f84040;
+            transform: scale(1.05);
+            background-color: #000;
+        }
+        
     </style>
 </head>
 
 <body>
+    <a href="../../index.html" class="boton-flotante-volver">Tornar al Portfoli</a>
     <div class="contenidor">
         <h1>Float Left</h1>
         <img id="bart" src="img/bart.webp" alt="">
