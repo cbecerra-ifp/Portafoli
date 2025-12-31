@@ -3,6 +3,7 @@
     --color-primary: #98ed90;
     --color-secondary: #f84040;
     --color-tertiary: #f8d340;
+    --color-fons: #22351f;
 
     --font-logo: 'JURASSIC_PARK', sans-serif;
     --font-body: 'Geo', sans-serif;
@@ -40,7 +41,7 @@ header {
     position: relative;
     width: 150px;
     height: auto;
-    animation: movimentLogo 10s 1 ease-in-out forwards;
+    animation: movimentLogo 5s 1 ease-in-out forwards;
 }
 
 @keyframes movimentLogo {
@@ -53,6 +54,14 @@ header {
     100% {
         left: 50px;
     }
+}
+
+#texto-logo {
+    color: var(--color-primary);
+    font-size: 100%;
+    font-family: var(--font-body);
+    margin-left: 450px;
+    display: none;
 }
 
 main {
@@ -70,7 +79,7 @@ aside {
     margin-right: 10px;
     border: var(--color-primary) 3px solid;
     padding: 20px;
-    background-color: #22351f;
+    background-color: var(--color-fons);
     border-radius: 10px;
     height: auto;
 }
@@ -96,6 +105,7 @@ aside nav ul li a {
 aside nav ul li a:hover {
     text-decoration: none;
     color: var(--color-secondary);
+    border-color: var(--color-secondary);
 }
 #dennis {
     font-size: 20px;
@@ -120,6 +130,10 @@ aside nav ul li a:hover {
     border-radius: 10px;
     margin: 0 auto;
     display: block;
+}
+
+#wayne:hover {
+    border-color: var(--color-secondary);
 }
 
 #perfil {
@@ -191,7 +205,8 @@ aside nav ul li a:hover {
     font-family: var(--font-body);
     font-size: 20px;
     line-height: 1.6;
-    color: var(--color-primary);
+    background-color: var(--color-fons);
+    color: var(--color-tertiary);
     border: var(--color-primary) 3px solid;
     border-radius: 10px;
     padding: 20px;
@@ -201,7 +216,7 @@ footer div{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4em;
+    height: 2em;
     gap: 4em;
 }
 
@@ -239,8 +254,13 @@ footer h1 {
 
     #logo {
         width: 100px; 
-        height: auto; 
+        height: 80%; 
         animation: none;
+    }
+
+    #texto-logo {
+        font-size: 60%; 
+        margin-left: 20px; 
     }
 
     footer h1 {
