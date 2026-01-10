@@ -260,7 +260,9 @@ footer h1 {
 
     #texto-logo {
         font-size: 60%; 
-        margin-left: 20px; 
+        margin-left: 20px;
+        display: block;
+        transform-origin: 0%;
     }
 
     footer h1 {
