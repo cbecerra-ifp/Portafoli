@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS04</title>
+    <style>
+      body {
+        font-size: 3rem;
+        font-family: Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+      //Exercici: Fer un programa on pregunti a l'usuari amb un prompt un color i pinti el
+      //fons de la pàgina en aquell color
+      var verd = "verd";
+      var vermell = "vermell";
+      var blau = "blau";
+      var canvi = prompt("Quin color vols de fons?");
+
+      if (canvi == verd) {
+        document.body.style.backgroundColor = "green";
+        document.body.style.color = "#ffffff";
+        document.write("Fons verd");
+      } else if (canvi == vermell) {
+        document.body.style.backgroundColor = "red";
+        document.body.style.color = "#ffffff";
+        document.write("Fons vermell");
+      } else if (canvi == blau) {
+        document.body.style.backgroundColor = "blue";
+        document.body.style.color = "#ffffff";
+        document.write("Fons blau");
+      } else {
+        document.body.style.backgroundColor = "orange";
+        document.body.style.color = "#ffffff";
+        document.write("Fons taronja");
+      }
+    </script>
+  </body>
+</html>

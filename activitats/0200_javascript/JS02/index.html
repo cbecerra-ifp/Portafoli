@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS02</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //Declaració de variables
+        var mailGuardat = "cbecerra@ifp-alguero.org";
+        var passwordGuardada="12345";
+        //alert("El mail guardat es: "+mailGuardat);
+
+        var mailIntroduit = prompt("Escriu el teu mail:");
+        var passwordIntroduida = prompt("Introdueix la teva contrasenya:");
+
+        if (mailIntroduit == mailGuardat & passwordIntroduida == passwordGuardada) { 
+            //Jordi ha puesto un & pero eso solo funciona a nivel de bytes
+            //debería llevar && ya que es una condición lógica entre boolean
+            document.write("Login correcte");
+        } else {
+            document.write("Login incorrecte");
+        }
+    </script>
+</body>
+</html>
